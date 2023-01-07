@@ -9,7 +9,6 @@ function Home() {
   return (
     <div>
       <h1>Home</h1>
-
       <p>Welcome to the home page, PENNY PINCHER!</p>
       <Form>
         <Form.Group controlId="formBasicEmail">
@@ -22,6 +21,7 @@ function Home() {
           </Button>
         </Form.Group>
       </Form>
+      <button>Don't Have an account? Sign Up here!</button>
 
     </div>
   );
