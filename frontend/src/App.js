@@ -10,10 +10,10 @@ function App() {
     <div className="container">
       <Router>
         <div className="navbar">
-          <Link to="/">home</Link>
-          <Link to="/login">login</Link>
-          <Link to="/page2">page2</Link>
-          <Link to="/page3">page3</Link>
+          <Link to="/">Home</Link>
+          <Link to="/login">Login</Link>
+          <Link to="/page2">Sign Up</Link>
+          <Link to="/page3">Calculator</Link>
         </div>
 
         <Routes>
