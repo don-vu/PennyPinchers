@@ -51,7 +51,7 @@ function Page3() {
            Submit
          </Button>
       </Form>
-
+      <Button>Next</Button> 
     </div>
   );
   
