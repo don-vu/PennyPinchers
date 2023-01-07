@@ -1,10 +1,13 @@
 function Page3() {
   return (
     <div>
-      <h1>Page 3</h1>
-      <p>Page 3 content</p>
+      <header> Sources of Income</header>
+      <p>What are your sources of income? </p>
+
+      <p>Student Loans</p>
+      
     </div>
-  )
+  );
 }
 
 export default Page3;
