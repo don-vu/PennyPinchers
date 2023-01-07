@@ -3,11 +3,18 @@ import Home from "./pages/home/home";
 import Page1 from "./pages/page1/page1";
 import Page2 from "./pages/page2/page2";
 import Page3 from "./pages/page3/page3";
+import { Signup } from "./Signup";
+import React, { useState } from "react";
+
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
+  const [currentForm, setCurrentFrom] = useState('login');
   return (
     <div className="container">
+      {
+        currentForm === "login" ? <login /> : <Signup />
+      }
       <Router>
         <div className="navbar">
           <Link to="/">Home</Link>
