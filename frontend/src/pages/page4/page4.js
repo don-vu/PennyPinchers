@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import { PieChart } from "react-minimal-pie-chart";
 import "./page4.css";
 
-function page4() {
+function Page4() {
   const data = [
     { title: "One", value: 10, color: "#E38627", label: "10%" },
     { title: "Two", value: 15, color: "#C13C37", label: "15%" },
@@ -39,4 +39,4 @@ function page4() {
   );
 }
 
-export default page4;
+export default Page4;
