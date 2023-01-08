@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 
 
 function Home() {
-  const { user, setUser } = useState(null)
-
+  const { user, setUser } = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-  }
+  };
 
   return (
 
