@@ -10,7 +10,7 @@
 
 .submit {
     margin-top: 15px;
-    margin-left: 150px;
+    margin-left: 265px;
 }
 
 .border {
@@ -21,6 +21,5 @@
     padding-top: 100px;
     padding-left: 120px;
     padding-right: 120px;
-    /* make round border */
     border-radius: 30px;
 }
