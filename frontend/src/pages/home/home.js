@@ -13,7 +13,7 @@ function Home() {
   return (
 
     <div>
-      <h1>Home</h1>
+      <h1>Welcome!</h1>
       <p>Welcome to the home page, PENNY PINCHER!</p>
       <p>Being a student is stressful enough, let us relieve some of the stress by helping you organize your funds.
         Based on your selected criteria, we will help you generate a customized plan so you can keep track
