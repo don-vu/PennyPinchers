@@ -2,3 +2,11 @@
     width: 300px;
     height: 300px
 }
+
+.containDashboard {
+    margin: 80px 170px;
+}
+
+.form-label {
+    font-weight: 700;
+}

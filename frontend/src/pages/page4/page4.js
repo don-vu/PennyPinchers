@@ -1,3 +1,4 @@
+import './page4.css';
 import axios from "axios";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -50,8 +51,7 @@ function Page4() {
   };
 
   return (
-    <div>
-      <h1>Dashboard</h1>
+    <div className="containDashboard">
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formBasicInput">
           <Form.Label>Income source</Form.Label>
