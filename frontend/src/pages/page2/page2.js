@@ -1,7 +1,7 @@
 import axios from "axios";
-import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useNavigate } from "react-router-dom";
 import './page2.css';
 
 function Page1() {
@@ -14,6 +14,7 @@ function Page1() {
     };
     axios.post("http://localhost:8080/api/persons", person)
   };
+  const navigate = useNavigate();
 
   return (
 
@@ -25,7 +26,7 @@ function Page1() {
           <Form.Control type="email" placeholder="Enter email"  name="userName"/>
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Enter password" name="password"/>
-          <Button className="submit" variant="primary" type="submit">
+          <Button onClick={() => navigate("/dashboard")}className="submit" variant="primary" type="submit">
             Submit
           </Button>
         </Form.Group>

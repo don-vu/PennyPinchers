@@ -22,7 +22,7 @@ function App() {
           <Link to="/login">Login</Link>
           <Link to="/signup">Sign Up</Link>
           <Link to="/page3">Calculator</Link>
-          <Link to="/page4">Page 4</Link>
+          <Link to="/dashboard">Page 4</Link>
         </div>
 
         <Routes>
@@ -30,7 +30,7 @@ function App() {
           <Route path="/login" element={<Page1 />} />
           <Route path="/signup" element={<Page2 />} />
           <Route path="/page3" element={<Page3 />} />
-          <Route path="/page4" element={<Page4 />} />
+          <Route path="/dashboard" element={<Page4 />} />
         </Routes>
       </Router>
     </div>
