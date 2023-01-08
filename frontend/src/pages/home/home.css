@@ -69,7 +69,7 @@ h1 {
 }
 
 .header {
-    background-color: #3a1104;
+    background-color: #056a16;
     color: white;
     width: 200%;
     text-align: center;
@@ -172,7 +172,7 @@ h1 {
     height: 40px;
     color: white;
     border: 0;
-    background-color: #f4511e;
+    background-color: #429df8;
 }
 
 @media only screen and (min-width:320px) and (max-width:725px) {
