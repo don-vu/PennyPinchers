@@ -18,19 +18,19 @@ function App() {
       }
       <Router>
         <div className="navbar">
-          <Link to="/">Home</Link>
+          <Link className="home" to="/">Penny Pinchers</Link>
+          <Link to="/dashboard">Dashboard</Link>
           <Link to="/login">Login</Link>
           <Link to="/signup">Sign Up</Link>
-          <Link to="/page3">Calculator</Link>
-          <Link to="/dashboard">Dashboard</Link>
+          {/* <Link to="/page3">Calculator</Link> */}
         </div>
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Page4 />} />
           <Route path="/login" element={<Page1 />} />
           <Route path="/signup" element={<Page2 />} />
           <Route path="/page3" element={<Page3 />} />
-          <Route path="/dashboard" element={<Page4 />} />
         </Routes>
       </Router>
     </div>

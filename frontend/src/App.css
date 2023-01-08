@@ -66,3 +66,13 @@ a {
   color: white;
   text-decoration: none;
 }
+
+a:hover {
+  color: lightblue
+}
+
+.home {
+  color: lightblue;
+  font-weight: 500;
+  font-size: 20px;
+}
