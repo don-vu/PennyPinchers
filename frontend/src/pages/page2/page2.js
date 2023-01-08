@@ -20,6 +20,7 @@ function Page1() {
     <div className="form">
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formBasicEmail" className="border">
+          <h1>Sign up</h1>
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email"  name="userName"/>
           <Form.Label>Password</Form.Label>

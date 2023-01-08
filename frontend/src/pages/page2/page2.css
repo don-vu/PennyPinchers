@@ -18,8 +18,12 @@
     height: 400px;
     width: 600px;
     padding: 50px;
-    padding-top: 100px;
+    padding-top: 75px;
     padding-left: 120px;
     padding-right: 120px;
     border-radius: 30px;
+}
+
+h1 {
+    margin-bottom: 30px;
 }
