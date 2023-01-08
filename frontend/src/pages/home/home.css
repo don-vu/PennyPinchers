@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
 .form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 100vw;
+    width: 120vw;
     background-color: #f5f5f5;
 }
 
@@ -36,16 +38,9 @@ h1 {
 
 }
 
-.containerHomeTitle {
-    margin-left: 140px;
-    margin-top: 100px;
-    padding: 20px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    color: white;
-}
 
 .containerHome {
+    font-family: "Roboto", sans-serif;
     margin-left: 140px;
     margin-top: 200px;
     position: relative;
@@ -53,4 +48,153 @@ h1 {
     background-color: rgb(71, 100, 129);
     border-radius: 20px;
     color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body {
+    min-height: 30vh;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.header {
+    background-color: #3a1104;
+    color: white;
+    width: 200%;
+    text-align: center;
+    height: 150px;
+    padding: 30px;
+}
+
+.header-title {
+    font-size: 50px;
+}
+
+.header-text {
+    font-size: 20px;
+}
+
+.section {
+    flex-flow: row wrap;
+    width: 120%;
+    display: flex;
+    flex-direction: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.section>div {
+    padding: 30px;
+}
+
+.small-div {
+    width: 20%;
+}
+
+.big-div {
+    width: 80%;
+}
+
+.bg-grey {
+    flex-flow: row wrap;
+    width: 120%;
+    display: flex;
+    flex-direction: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #d8d8d8;
+}
+
+
+.div-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact-container {
+    flex-flow: column;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+.div-title {
+    text-align: center;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    /*flex-flow: row wrap;*/
+    justify-content: space-between;
+    width: 100%;
+}
+
+#sect1 {
+    width: 100%;
+}
+
+#sect2 {
+    width: 100%;
+}
+
+.contact-form>div {
+    width: 500px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+}
+
+.input-field {
+    height: 40px;
+    margin: 15px 0;
+}
+
+.contact-btn {
+    margin-top: 15px;
+    height: 40px;
+    color: white;
+    border: 0;
+    background-color: #f4511e;
+}
+
+@media only screen and (min-width:320px) and (max-width:725px) {
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        /*flex-flow: row wrap;*/
+        width: 80%;
+    }
+
+    .section {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    .small-div {
+        width: 80%;
+    }
 }
