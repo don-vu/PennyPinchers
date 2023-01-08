@@ -1,5 +1,8 @@
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 import { PieChart } from "react-minimal-pie-chart";
 import "./page4.css";
+
 
 function page4() {
   const data = [
@@ -12,6 +15,18 @@ function page4() {
     <div>
       <h1>Dashboard</h1>
       <PieChart className="piechart" data={data} />;
+      <Form>
+        <Form.Group controlId="formBasicInput">
+          <h1>Sign up</h1>
+          <Form.Label>Income source</Form.Label>
+          <Form.Control type="text" name="asset"/>
+          <Form.Label>$</Form.Label>
+          <Form.Control type="number" name="value"/>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
+        </Form.Group>
+      </Form>
     </div>
   );
 }
