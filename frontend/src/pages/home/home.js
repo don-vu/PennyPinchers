@@ -10,7 +10,8 @@ function Home() {
 
   return (
 
-<div className='containerHome'>
+
+    <div className='containerHome'>
       <div>
         <h1>Home</h1>
         <p>Welcome to the home page, PENNY PINCHER!</p>
@@ -18,7 +19,8 @@ function Home() {
           Based on your selected criteria, we will help you generate a customized plan so you can keep track
           of how much you spend for each category every month for the length of your academic term</p>
       </div>
-</div>
+    </div>
+
   );
 }
 
