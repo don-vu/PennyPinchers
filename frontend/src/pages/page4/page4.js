@@ -8,22 +8,25 @@ import React, { useState } from "react";
 
 function Page4() {
   const [assets, setAssets] = useState([]);
-  const data = [
-    { title: "One", value: 10, color: "#E38627", label: "10%" },
-    { title: "Two", value: 15, color: "#C13C37", label: "15%" },
-    { title: "Three", value: 20, color: "#6A2135", label: "20%" },
-  ];
+  axios
+    .get("http://localhost:8080/api/assets")
+    .then((res) => {
+      return JSON.parse(res.data);
+    })
+    .then((res) => {
+        setAssets(res);
+    });
 
   // total of amounts in assets
   const total = assets.reduce((acc, asset) => {
     return acc + Number(asset.amount); 
   }, 0);
-
-  const data2 = assets.map((asset) => {
+  
+  const data = assets.map((asset) => {
     return {
       title: asset.asset,
       value: asset.amount / total * 100,
-      color: '#' + Math.floor(Math.random() * 16777215).toString(16),
+      color: asset.color,
     }
   })
 
@@ -60,7 +63,7 @@ function Page4() {
           </Button>
         </Form.Group>
       </Form>
-      <PieChart className="piechart" data={data2} />;
+      <PieChart className="piechart" data={data} />;
       <Table borderded hover>
         <thead>
           <tr>
@@ -72,7 +75,7 @@ function Page4() {
           {console.log(total)}
           {assets.map((asset) => (
             <tr>
-              <td>{asset.asset}</td>
+              <td style={{color: asset.color}}>{asset.asset}</td>
               <td>{asset.amount}</td>
             </tr>
           ))}

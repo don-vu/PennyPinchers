@@ -77,6 +77,7 @@ app.post("/api/assets", (request, response) => {
       id: Math.floor(Math.random() * (1000 - 1 + 1)) + 1,
       asset: `${body.asset}`,
       amount: `${body.amount}`,
+      color: '#' + Math.floor(Math.random() * 16777215).toString(16),
     }
     assets.push(asset);
     console.log(assets);
