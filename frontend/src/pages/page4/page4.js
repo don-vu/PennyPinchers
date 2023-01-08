@@ -9,7 +9,7 @@ import React, { useState } from "react";
 function Page4() {
   const [assets, setAssets] = useState([]);
   axios
-    .get("http://localhost:8080/api/assets")
+    .get("https://localhost:8080/api/assets")
     .then((res) => {
       return JSON.parse(res.data);
     })
@@ -36,10 +36,10 @@ function Page4() {
       asset: event.target.asset.value,
       amount: event.target.amount.value,
     };
-    axios.post("http://localhost:8080/api/assets", obj);
+    axios.post("https://localhost:8080/api/assets", obj);
     setTimeout(function() {
       axios
-        .get("http://localhost:8080/api/assets")
+        .get("https://localhost:8080/api/assets")
         .then((res) => {
           return JSON.parse(res.data);
         })
