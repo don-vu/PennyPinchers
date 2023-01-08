@@ -20,19 +20,19 @@ function Home() {
         title='About Us'
         description='Being a student is stressful enough, let us relieve some of the stress by helping you organize your funds.
         Based on your selected criteria, we will help you generate a customized plan so you can keep track
-        of how much you spend for each category every month for the length of your academic term'
+        of how much you spend for each category every month for the length of your academic term.'
       />
 
       <Card
         className='section bg-grey'
         title='Our Values'
-        description='We believe that every student deserve to be able to manage their money. Freely and safely. '
+        description='We believe that every student deserve to be able to manage their money finances for free! '
       />
 
       <Card
         className='section'
         title='Our Mission'
-        description='The mission statement'
+        description='Is to be able to provide students with an easy to use calculator that helps them with budgeting for the upcoming semester.'
       />
       <ContactContainer />
     </div>
@@ -113,8 +113,4 @@ const ContactContainer = () => {
 }
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> ced9d716236809588e987d1effa8f54859060b9d
 export default Home;
