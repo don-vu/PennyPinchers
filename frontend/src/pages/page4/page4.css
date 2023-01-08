@@ -7,6 +7,10 @@
     margin: 80px 170px;
 }
 
+.btn-primary {
+    margin-top: 10px;
+}
+
 .form-label {
     font-weight: 700;
 }
