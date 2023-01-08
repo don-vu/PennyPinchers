@@ -22,7 +22,7 @@ function App() {
           <Link to="/login">Login</Link>
           <Link to="/signup">Sign Up</Link>
           <Link to="/page3">Calculator</Link>
-          <Link to="/dashboard">Page 4</Link>
+          <Link to="/dashboard">Dashboard</Link>
         </div>
 
         <Routes>
