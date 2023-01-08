@@ -88,6 +88,12 @@ app.get("/api/assets", (request, response) => {
   response.json(JSON.stringify(assets));
 });
 
+app.get("/api/death", (request, response) => {
+  // empty the array
+  assets.length = 0;
+  response.json("death");
+});
+
 const PORT = process.env.PORT || "8080";
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

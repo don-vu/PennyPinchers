@@ -82,6 +82,7 @@ function Page4() {
           <tr><td>Total: ${total}</td></tr>
         </tbody>
       </Table>
+      <Button onClick={() => axios.get("https://pennypinchers.fly.dev/api/death")}>Clear</Button>
     </div>
   );
 }
