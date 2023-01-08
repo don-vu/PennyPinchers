@@ -31,13 +31,26 @@ h1 {
 .redirect {
     margin-top: 20px;
     margin-left: 150px;
+    color: blue;
+    border-color: white;
+
+}
+
+.containerHomeTitle {
+    margin-left: 140px;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    color: white;
 }
 
 .containerHome {
     margin-left: 140px;
-    margin-top: 100px;
-    padding: 20px;
-    background-color: slategray;
+    margin-top: 200px;
+    position: relative;
+    padding: 30px;
+    background-color: rgb(71, 100, 129);
     border-radius: 20px;
     color: white;
 }
