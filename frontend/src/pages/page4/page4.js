@@ -14,10 +14,8 @@ function page4() {
   return (
     <div>
       <h1>Dashboard</h1>
-      <PieChart className="piechart" data={data} />;
       <Form>
         <Form.Group controlId="formBasicInput">
-          <h1>Sign up</h1>
           <Form.Label>Income source</Form.Label>
           <Form.Control type="text" name="asset"/>
           <Form.Label>$</Form.Label>
@@ -27,6 +25,7 @@ function page4() {
           </Button>
         </Form.Group>
       </Form>
+      <PieChart className="piechart" data={data} />;
     </div>
   );
 }
