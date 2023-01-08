@@ -20,7 +20,7 @@ function App() {
         <div className="navbar">
           <Link to="/">Home</Link>
           <Link to="/login">Login</Link>
-          <Link to="/page2">Sign Up</Link>
+          <Link to="/signup">Sign Up</Link>
           <Link to="/page3">Calculator</Link>
           <Link to="/page4">Page 4</Link>
         </div>
