@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import image from "../../img/background.png";
 
 function Page1() {
   const navigate = useNavigate();
@@ -13,6 +14,7 @@ function Page1() {
 
   return (
     <div className="form">
+      <div style={{ backgroundImage: `url(${image})` }}></div>
       <Form>
         <Form.Group controlId="formBasicEmail" className="border">
           <h1>Login </h1>
@@ -24,7 +26,7 @@ function Page1() {
             Submit
           </Button>
         </Form.Group>
-          <button className="redirect" onClick={handleClick}>Don't Have an account? Sign Up here!</button>
+        <button className="redirect" onClick={handleClick}>Don't Have an account? Sign Up here!</button>
       </Form>
     </div>
   );
