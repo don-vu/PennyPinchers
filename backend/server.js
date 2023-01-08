@@ -16,11 +16,14 @@ const personSchema = new mongoose.Schema({
   userName: String,
   password: String,
 });
-
 const Person = mongoose.model("Person", personSchema, "users");
-// app.get("/api/persons", (request, response) => {
-//   response.json(people[0]);
-// });
+
+const assetSchema = new mongoose.Schema({
+  id: Number,
+  asset: String,
+  amount: Number,
+});
+const Asset = mongoose.model("Asset", assetSchema, "income_sources");
 
 app.post("/api/persons", (request, response) => {
   const body = request.body;
@@ -42,6 +45,27 @@ app.post("/api/persons", (request, response) => {
   response.json("ok");
 });
 
+
+app.post("/api/assets", (request, response) => {
+  const body = request.body;
+  mongoose.connect(url).then((result) => {
+    console.log("connected to MongoDB");
+  
+    const asset = new Asset({
+      // random number between 1 and 1000
+      id: Math.floor(Math.random() * (1000 - 1 + 1)) + 1,
+      asset: `${body.asset}`,
+      amount: `${body.amount}`,
+    }
+    )
+  
+    return asset.save();
+  }).then(() => {
+    console.log("asset saved!");
+    return mongoose.connection.close();
+  })
+  response.json("ok");
+});
 
 const PORT = process.env.PORT || "8080";
 app.listen(PORT, () => {
