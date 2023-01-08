@@ -9,7 +9,7 @@ function Page1() {
   const navigate = useNavigate();
 
   const handleClick = (event) => {
-    navigate('/page2');
+    navigate('/signup');
   };
 
   return (
@@ -26,7 +26,7 @@ function Page1() {
             Submit
           </Button>
         </Form.Group>
-        <button className="redirect" onClick={handleClick}>Don't Have an account? Sign Up here!</button>
+        <Button className="redirect" variant="secondary" onClick={handleClick}>Don't Have an account? Sign Up here!</Button>
       </Form>
     </div>
   );
