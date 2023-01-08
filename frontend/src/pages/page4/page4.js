@@ -4,7 +4,6 @@ import Form from "react-bootstrap/Form";
 import { PieChart } from "react-minimal-pie-chart";
 import "./page4.css";
 
-
 function page4() {
   const data = [
     { title: "One", value: 10, color: "#E38627", label: "10%" },
@@ -14,13 +13,12 @@ function page4() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(event.target.asset.value, event.target.amount.value);
     const obj = {
       asset: event.target.asset.value,
       amount: event.target.amount.value,
     };
     axios.post("http://localhost:8080/api/assets", obj);
-  }
+  };
 
   return (
     <div>
@@ -28,9 +26,9 @@ function page4() {
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formBasicInput">
           <Form.Label>Income source</Form.Label>
-          <Form.Control type="text" name="asset"/>
+          <Form.Control type="text" name="asset" />
           <Form.Label>$</Form.Label>
-          <Form.Control type="number" name="amount"/>
+          <Form.Control type="number" name="amount" />
           <Button variant="primary" type="submit">
             Submit
           </Button>
