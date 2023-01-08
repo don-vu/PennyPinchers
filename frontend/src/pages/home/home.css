@@ -1,0 +1,17 @@
+.borderHome {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: slategrey;
+    color: white;
+    border-radius: 30px;
+}
+
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
