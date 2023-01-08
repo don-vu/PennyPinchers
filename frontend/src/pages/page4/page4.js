@@ -79,6 +79,7 @@ function Page4() {
               <td>{asset.amount}</td>
             </tr>
           ))}
+          <tr><td>Total: ${total}</td></tr>
         </tbody>
       </Table>
     </div>
